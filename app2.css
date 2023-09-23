@@ -1,0 +1,13 @@
+/* Add styles for the header when it's initially hidden */
+#scroll-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: -100px; /* Initially, hide the header above the viewport */
+    width: 100%;
+    transition: top 0.3s; /* Add smooth transition when the header appears */
+}
+
+/* Rest of your styles */

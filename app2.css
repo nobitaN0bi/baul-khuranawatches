@@ -1,13 +1,106 @@
 /* Add styles for the header when it's initially hidden */
 #scroll-header {
-    background-color: #333;
-    color: white;
+    background-color:white;
+    color: black;
     text-align: center;
-    padding: 20px;
+    padding: -50px;
     position: fixed;
-    top: -100px; /* Initially, hide the header above the viewport */
+    top:0%;
+     /* Initially, hide the header above the viewport */
+    align-items:center;
     width: 100%;
-    transition: top 0.3s; /* Add smooth transition when the header appears */
+    transition: top 0.5s; /* Add smooth transition when the header appears */
+    line-height: 0.125px;
+}
+body {
+    background-color: #E5E5DB;
+    background-image: url(/assets/noise.png);
+    
+  }
+
+.header1
+{
+    font-family: "Great Vibes", sans-serif;
+    letter-spacing: 3px;
+    font-size: 48px;
+    line-height: -1px;
+    padding: -25px;
+    
+} 
+
+.header2
+{
+    font-family: "Great Vibes", sans-serif;
+    top:-15px;
+    line-height: -10px;
+    font-size: 16px ;
+    line-height: -1px;
 }
 
-/* Rest of your styles */
+
+
+#bg1
+{
+    padding-top: 25px;
+    scale:1.4;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+.scrollable
+{
+    padding-left: 69px;
+    padding-right: 69px;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.scrollable,
+.container
+{
+    
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.container
+{
+    scroll-snap-align: center;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.vertical-flexbox2
+{
+    padding-left: 69px;
+    padding-right: 69px;
+    align-items: center;
+}
+
+#galat
+{
+    padding-top: 100px;
+}
+
+.hover
+{
+    background-color: #E5E5DB;
+    color: #E5E5DB;
+    padding: 10px 20px;
+    font-size: 69px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 1s;
+    transition: background-color 0.3s, opacity 0.3s; /* Add a transition for smooth effect */
+}
+
+.hover:hover {
+
+    color: black;
+    opacity: 0.8; 
+}

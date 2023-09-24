@@ -96,11 +96,12 @@ body {
 .scroll-container {
   display: flex;
   justify-content: space-between;
-  overflow-x: scroll;
-  overflow-y: scroll;
-  scroll-snap-type: x mandatory;
+  /* overflow-x: scroll;
+  overflow-y: scroll; */
+  /* scroll-snap-type: x mandatory; */
   scroll-behavior: smooth;
   white-space: nowrap;
+  scroll-padding: 0 24px;
 }
 
 /* Style for each section container */
@@ -109,11 +110,13 @@ body {
   min-width: 100vw;
   height: auto; /* Adjust height to content */
   scroll-snap-align: start; /* Snap to the start of each section */
-  padding: 20px; /* Add spacing between sections as needed */
+  padding-top: 20px; /* Add spacing between sections as needed */
   box-sizing: border-box;
   display: flex; /* Create a horizontal flex container for the columns */
   justify-content: space-between; /* Arrange columns with space in between */
   align-items: center; /* Vertically center align the columns */
+  display: flex;
+  gap: 1;
 }
 /* Style for the left column */
 
@@ -137,24 +140,78 @@ body {
 
 .scroll-containerss {
   display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  justify-content: space-between;
+  /* overflow-x: scroll;
+  overflow-y: scroll; */
+  /* scroll-snap-type: x mandatory; */
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  scroll-padding: 0 24px;
 }
 
-.page {
-  width: 100vw;
-  height: 100vh;
+
+.page{
   display: flex;
-  flex-direction: row;
-  scroll-snap-align: start;
+  gap:2;
 }
 
-.column {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
+.write2
+{
+  align-items: center;
+  padding-left: 750px;
+  padding-right: 1500px;
+  padding-top: 400px;
+  max-width: 30vw;
+  color: white;
+  font-family: "Tangerine", cursive;
+  font-size: 32px;
+  border-right: 10cm;
+  font-weight: 600;
+  line-height: 7px;
 }
 
-/* Define additional styling as needed */
+.menpics{
+  padding-left: 500px;
+}
+
+.footer{
+  line-height: 0.25;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-family: "Great Vibes", sans-serif;
+  
+  color: black;
+  line-height: 0.25px;
+  background-color:white;
+  
+  
+}
+
+.imagecontainer {
+  position: relative; /* Create a relative positioning context */
+  width: 100%; /* Set the width of the container */
+  
+}
+
+
+.overlay-content {
+  position: absolute; /* Position the overlay content relative to the container */
+  top: 0; /* Adjust top, left, right, or bottom as needed */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Add a semi-transparent background to the overlay */
+  color: white; /* Text color for the overlay content */
+  padding: 20px; /* Add padding to the overlay content */
+  text-align: center; /* Center-align the text within the overlay */
+  z-index: 1; /* Place the overlay content above the image (higher z-index) */
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 450px;
+  font-size: 32px;
+  align-items: center;
+}
+
